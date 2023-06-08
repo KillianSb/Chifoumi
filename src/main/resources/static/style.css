@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+main {
+	display: block;
+	width: 100%;
+	margin: 5%;
+	padding: 2%;
+}
+
+h3 {
+	size: 50px;
+	text-align: center;
+}
+
+.Joueur {
+	display: block;
+	margin: 5%;
+}
+
+.conteneurImg {
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+}
+
+.img {
+	display: flex;
+	flex-direction: column;
+}
+
+.checkbox {
+	display: flex;
+}
+
+.BoxEnvoi {
+	text-align: center;
+}

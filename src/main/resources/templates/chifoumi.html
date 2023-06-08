@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chifoumi</title>
+</head>
+<body>
+	<main>
+	
+		<h3 class="Titre">Jouez !</h3>
+		<div class="Joueur">
+			<ul class="conteneurImg">
+				<li class="img">
+					<a href="/jouer?choixJoueur=0">
+						<img class="fit-picture" src="./img/chi.png" alt="img1">
+					</a>
+				</li>
+				<li class="img">
+					<a href="/jouer?choixJoueur=1">
+						<img class="fit-picture" src="./img/fou.png" alt="img2">
+					</a>
+				</li>
+				<li class="img">
+					<a href="/jouer?choixJoueur=2">
+						<img class="fit-picture" src="./img/mi.png" alt="img3">
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<h3 class="Titre">Jouez !</h3>
+		<div class="Joueur">
+			<ul class="conteneurImg">
+				<li class="img">
+					<img class="fit-picture" src="./img/chi.png" alt="img1">
+					<input class="checkbox" value="0" type="radio" id="0" name="choix">
+				</li>
+				<li class="img">
+					<img class="fit-picture" src="./img/fou.png" alt="img2">
+					<input class="checkbox" value="1" type="radio" id="1" name="choix">
+				</li>
+				<li class="img">
+					<img class="fit-picture" src="./img/mi.png" alt="img3">
+					<input class="checkbox" value="2" type="radio" id="2" name="choix">
+				</li>
+			</ul>
+		</div>
+		
+		<div class="BoxEnvoi">
+			<form action="/jouer?choixJoueur=1" method="post">
+				<button id="buttonEnvoi">Envoyer</button>
+			</form>
+		</div>
+	
+	</main>
+	<link rel="stylesheet" href="style.css">
+</body>
+</html>
