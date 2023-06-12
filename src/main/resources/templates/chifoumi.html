@@ -2,58 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Chifoumi</title>
+<title>ChiFouMi</title>
+<link rel="icon" href="/images/chifoumi.jpg" type="image/x-icon">
 </head>
 <body>
-	<main>
-	
-		<h3 class="Titre">Jouez !</h3>
-		<div class="Joueur">
-			<ul class="conteneurImg">
-				<li class="img">
-					<a href="/jouer?choixJoueur=0">
-						<img class="fit-picture" src="./img/chi.png" alt="img1">
-					</a>
-				</li>
-				<li class="img">
-					<a href="/jouer?choixJoueur=1">
-						<img class="fit-picture" src="./img/fou.png" alt="img2">
-					</a>
-				</li>
-				<li class="img">
-					<a href="/jouer?choixJoueur=2">
-						<img class="fit-picture" src="./img/mi.png" alt="img3">
-					</a>
-				</li>
-			</ul>
-		</div>
-		
-		
-		<h3 class="Titre">Jouez !</h3>
-		<div class="Joueur">
-			<ul class="conteneurImg">
-				<li class="img">
-					<img class="fit-picture" src="./img/chi.png" alt="img1">
-					<input class="checkbox" value="0" type="radio" id="0" name="choix">
-				</li>
-				<li class="img">
-					<img class="fit-picture" src="./img/fou.png" alt="img2">
-					<input class="checkbox" value="1" type="radio" id="1" name="choix">
-				</li>
-				<li class="img">
-					<img class="fit-picture" src="./img/mi.png" alt="img3">
-					<input class="checkbox" value="2" type="radio" id="2" name="choix">
-				</li>
-			</ul>
-		</div>
-		
-		<div class="BoxEnvoi">
-			<form action="/jouer?choixJoueur=1" method="post">
-				<button id="buttonEnvoi">Envoyer</button>
-			</form>
-		</div>
-	
-	</main>
-	<link rel="stylesheet" href="style.css">
+
+<h1>Jouez !</h1>
+
+<div class="Block">
+	<a href="/jouer?choixJoueur=0"><img alt="chi" src="/images/chi.png"></a>
+	<a href="/jouer?choixJoueur=1"><img alt="fou" src="/images/fou.png"></a>
+	<a href="/jouer?choixJoueur=2"><img alt="mi" src="/images/mi.png"></a>
+</div>
+
+
+<h1>Jouez (via formulaire)!</h1>
+
+<form action="/jouer" method="post" class="Block">
+	<input class="FormChoix" type=radio name="choixJoueur" value="0"/><img alt="chi" src="/images/chi.png"/><br>
+	<input class="FormChoix" type=radio name="choixJoueur" value="1"/><img alt="fou" src="/images/fou.png"/><br>
+	<input class="FormChoix" type=radio name="choixJoueur" value="2"/><img alt="mi" src="/images/mi.png"/><br>
+	<button type="submit" class="FormSend">Jouer</button>	
+</form>
+
+<link rel="stylesheet" href="style.css">
 </body>
 </html>

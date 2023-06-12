@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th ="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ChiFouMi</title>
+<link rel="icon" href="/images/chifoumi.jpg" type="image/x-icon">
+</head>
+<body>
+<h1></h1>
+
+<div class="blockContent">
+	<div th:switch="${choixJoueur}">
+	<h2>Vous avez Jouer : </h2>
+	    <p th:case="'0'"><img alt="chi" src="/images/chi.png"></p>
+	    <p th:case="'1'"><img alt="fou" src="/images/fou.png"></p>
+	    <p th:case="'2'"><img alt="mi" src="/images/mi.png"></p>
+	</div>
+	
+	<div th:switch="${choixServeur}">
+	<h2>Le serveur a Jouer : </h2>
+	    <p th:case="'0'"><img alt="chi" src="/images/chi.png"></p>
+	    <p th:case="'1'"><img alt="fou" src="/images/fou.png"></p>
+	    <p th:case="'2'"><img alt="mi" src="/images/mi.png"></p>
+	</div>
+	
+	<h1 th:text="${resultat}"></h1>
+	
+	<a href="/chifoumi">Rejouer</a>
+</div>
+
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
